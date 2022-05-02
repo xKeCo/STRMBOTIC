@@ -38,7 +38,7 @@ function Navbar() {
           </li>
           <li>
             <Link href="/Login">
-              <a>Login</a>
+              <a>Not Login</a>
             </Link>
           </li>
         </ul>
