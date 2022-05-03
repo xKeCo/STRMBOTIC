@@ -4,6 +4,7 @@ import React from "react";
 
 // Menu icon
 import menu from "../../public/Menu.svg";
+import bag from "../../public/bag.svg";
 
 // Styles
 import s from "./Navbar.module.css";
@@ -41,10 +42,14 @@ function Navbar() {
               <a>Not Login</a>
             </Link>
           </li>
+          <li>
+            <Image src={bag} alt="Bag" width={25} height={25} />
+          </li>
         </ul>
       </div>
       <div className={s.nav__menu__icon}>
-        <Image src={menu} alt="menu icon" width={35} height={35} />
+        <Image src={bag} alt="menu icon" width={30} height={30} />
+        <Image src={menu} alt="menu icon" width={40} height={40} />
       </div>
     </div>
   );
