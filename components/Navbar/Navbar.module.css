@@ -1,8 +1,11 @@
 .nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 4rem;
+  padding: 0.5rem 4rem;
 }
 
 .nav__links {
@@ -22,7 +25,12 @@
   gap: 1rem;
 }
 
-@media screen and (max-width: 712px) {
+@media screen and (max-width: 819px) {
+  .nav {
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (max-width: 760px) {
   .nav__menu__icon {
     display: flex;
     justify-content: center;
@@ -36,5 +44,18 @@
   }
   .nav {
     padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .nav__logo__h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav__menu__icon__bag {
+    width: 25px;
+  }
+  .nav__menu__icon__menu {
+    width: 30px;
   }
 }

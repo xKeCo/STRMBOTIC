@@ -42,14 +42,22 @@ function Navbar() {
               <a>Not Login</a>
             </Link>
           </li>
-          <li>
-            <Image src={bag} alt="Bag" width={25} height={25} />
-          </li>
+          <Image src={bag} alt="Bag" width={25} height={25} />
         </ul>
       </div>
       <div className={s.nav__menu__icon}>
-        <Image src={bag} alt="menu icon" width={30} height={30} />
-        <Image src={menu} alt="menu icon" width={40} height={40} />
+        <img
+          className={s.nav__menu__icon__bag}
+          src="./bag.svg"
+          alt="menu icon"
+          width="30px"
+        />
+        <img
+          className={s.nav__menu__icon__menu}
+          src="./Menu.svg"
+          alt="menu icon"
+          width="45px"
+        />
       </div>
     </div>
   );
